@@ -1,0 +1,48 @@
+<DOCTYPE html!>
+<meta charset="utf-8">
+
+<html>
+	<head>
+		<link rel="stylesheet" href="accueil.css" />
+		<title>QuizzShow</title>
+		
+	</head>	
+	<body>
+	<header>
+		<h1 class="welcom" id="el">Bienvenue dans QuizzShow </h1>
+	</header>
+	<section>
+		<article class="bloc" onload="afficherQuiz()">
+			<h2 class="title">Présentation</h1>
+			<p class="para">QuizzShow est comme son nom l'indique un quizz de questions funs permettant à un utilisateur lambda 
+			de tester ses connaissances sur les séries Disney. Mais avant quelques règles et principes du jeu. </p>
+		</article>
+		<article class="bloc">
+			<h2 class="title">Principe</h1>
+			<p class="para">Le jeu comporte <b>10</b> questions. Et pour chaque question, il y'a une unique reponse. Un délai de 30s 
+			est donné au joueur pour correctement repondre à une question, après ce délai on passe à la question suivante. Pour chaque bonne reponse , le point équivalent. Pour une mauvaise reponse, -2 points. </p>
+		</article>
+		<article class="bloc">
+			<h2 class="title">Règles</h1>
+			<ul>
+				<li><p>Si le joueur donne une reponse correcte en au plus 5s, il reçoit 5 points</p></li>
+				<li><p>Si le joueur donne une reponse correcte en au plus 10s, il reçoit 4 points</p></li>
+				<li><p>Si le joueur donne une reponse correcte en au plus 15s, il reçoit 3 points</p></li>
+				<li><p>Si le joueur donne une reponse correcte en au plus 20s, il reçoit 2 points</p></li>
+				<li><p>S'il donne une reponse juste en plus de 20s, il reçoit 1 point</p></li>
+				<li><p>Il faut cocher la reponse qui semble juste. Mais attention, si elle est fausse le joueur perd 2 points.</p></li>
+			</ul>
+		</article>
+		
+		<p class="para"> Vous êtes fin prêt! Allez bonne chance! :) </p>
+		<article class="bloclien">
+			<a href="question.html" role="button" id="myLink" href="lol.js">Commencer le jeu </a> 
+		</article>
+	</section>
+	<footer >
+		<p> un quizz fun et interactif | &copyCopyright  @KalySo </p>
+	</footer>
+		
+
+	</body>
+</html>

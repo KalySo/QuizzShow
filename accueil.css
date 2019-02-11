@@ -1,0 +1,383 @@
+section{
+	
+	background: rgb(247,246,240);
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 30px;
+	border: 2px solid gray;
+	color: rgb(70,70,70);
+
+}
+
+/* Polices personnalisées  */
+@font-face {
+	font-family: 'vintage';
+	src: url('polices/vintage.ttf')
+	format('truetype');
+
+}
+
+
+@font-face {
+font-family: 'oracle';
+src: url('polices/oracle.woff') format('woff'),
+url('polices/oracle.ttf')
+format('truetype');
+
+}
+
+/* Style du mt de bienvenue   */
+.welcom{
+	color:rgb(233,233,233);
+	font-size: 2.7em; 
+	text-align: center;
+	margin-top: -20px; 
+	background: rgb(70,70,70);
+	border: 1px transparent rgb(70,70,70) ;
+	font-family: vintage
+
+}
+
+/*Style des grands titre de la page d'accueil   */
+
+.title{
+	color:rgba(120,0,120, 0.8);
+	font-size: 3em; 
+	font-family: oracle ;
+	margin-bottom: -10px;
+	margin-top: auto;
+}
+
+.para{
+	text-align: justify;
+	font-size: 1em; 
+  	font-family: 'Arial';
+
+}
+
+li{
+	color: rgba(120,0,120, 0.8); 
+}
+
+li p {
+	color:rgb(70,70,70);
+	margin-bottom: -10px;  
+  	font-size: 1em; 
+  	font-family: 'Arial';
+}
+
+a{
+	border: 2px rgba(120,0,120, 0.8) transparent;
+	border-radius: 4px;
+	color: white;
+	font-size: 2em; 
+	font-weight: bold;
+	background: rgba(51,17,55, 0.8);
+	text-align: center;
+	text-decoration-line: none;
+	padding: 20px;
+	box-shadow: 2px 2px 0 black;
+
+}
+
+
+.btnSuivant{
+	border-radius: 4px;
+	color: white;
+	font-size: 1em; 
+	font-weight: bold;
+	background: rgba(51,17,55, 0.8);
+	text-align: center;
+	text-decoration-line: none;
+	padding: 10px;
+
+}
+
+.bloclien{
+	box-shadow: : 10px 10px 0px  red;
+	margin-top: 40px;
+	margin-right: 35%; 
+	margin-left: 35%;
+	margin-bottom: 20px;
+
+}
+
+
+header{
+	height: 10px;
+	padding: 30px;
+}
+
+header, footer{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: -5px;
+	background: rgb(70,70,70);
+}
+
+
+footer{
+	
+	border-top: 1px transparent rgb(70,70,70);
+	height:30px;
+	margin-top: -20px;
+
+}
+
+footer p{
+		color:rgb(233,233,233) ;
+		text-align: right;
+		padding-top: 5px;
+		margin-right: 5px;
+}
+
+.style{
+	margin-top: : 20px;
+}
+
+
+/* Stylisation de la barre  */
+.progressBar{
+	width: 100%; 
+	border: 1px transparent rgb(221, 12, 180);
+	height: 50px;
+	
+}
+
+
+
+.pts5{
+
+	display: inline-block;
+	border: 1px transparent  rgba(122, 22, 180);
+	text-align: center;
+	height: 30px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-right: : -20px;
+	border-radius: 5px;
+}
+
+
+.pts4{
+
+	display: inline-block;
+	border: 1px transparent  rgba(221, 12, 180) ;
+	height:30px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-right: : -10px;
+	border-radius: 5px;
+}
+
+.pts3{
+
+	display: inline-block;	
+	border: 1px transparent green;
+	text-align: center;
+	height:30px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-right: : -20px;
+	border-radius: 5px;
+}
+
+.pts2{
+
+	display: inline-block;
+	border: 1px transparent rgb(22, 122, 180);
+	text-align: center;
+	height:30px; 
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-right: : -10px;
+	border-radius: 5px;
+
+}
+
+.pt1{
+	
+	display: inline-block;
+	border: 1px transparent rgb(22, 122, 80) ;
+	border-radius: 5px;
+	text-align: center;
+	height:30px;
+	color: white;
+	font-weight:  bold;
+	font-size: 1.5em;
+
+	
+}  
+/*Pour Afficher un message d'erreur */
+.erreur{
+	height: 15px;
+	margin-top:20px;
+	font-weight: : bold;
+	margin-left:  1000px;
+	
+}
+
+.score{
+	color:rgb(233,233,233); 
+	font-weight: bold;
+	float: right; 
+	background: rgb(70,70,70);
+	border: 1px transparent rgb(70,70,70) ;
+	margin-top: -75px;
+	font-size: : 1.5em;
+}
+
+
+/* Stylisation du slide */
+
+/* Création d'une animation pour l'affichage du slide */
+@-webkit-keyframes anim {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes anim{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slide{
+	position: relative;
+	-webkit-animation-name: anim ;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: anim;
+  	animation-duration: 1.5s;
+  	
+}
+
+.categorie{
+	font-weight: bold;
+	color: rgb(221, 12, 180);
+	text-align: center;
+	font-size: 1.5em; 
+	margin-bottom: 20px;
+}
+
+
+.reponses{
+	/*  margin-left: 300px; */
+  	/* margin-right: 200px; */
+  	text-align: center;   
+  	font-size: 1em; 
+  	font-family: 'Arial';
+}
+
+.question{
+
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 1.5em; 
+  	font-family: 'Arial Black';
+}
+
+/* Code pour personnaliser le bouton radio */
+
+/* Masquer le bouton radio d'origine  */
+input[type=radio]{
+	display: none; 
+	text-align: center;
+}
+
+
+/* Affichage de notre bouton radio personnalisé */
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 15px;
+    height: 15px;
+}
+
+
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: rgb(221, 12, 180);
+    border-color: rgb(221, 12, 180);
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+/* Mise en forme du statut du joueur à la fin */
+.statut{
+	color: rgb(221, 12, 180);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;  
+	font-family: Verdana;
+	font-style: italic;
+
+}
+
+
+
+
+/* Mise en forme du mot de fin à la fin */
+.motFin{
+	font-weight: bold; 
+	font-size: 2em ; 
+	text-align: center; 
+	margin-bottom: 10px; 
+}
+
+/* Mise en forme des feux d'artifice */
+.img{
+	 margin-left: 270px ; 
+	margin-right: 10px; */
+	float: center;
+
+}
+
+
+/* STyle du bouton "Recommencer" */
+.reload{
+
+	border-radius: 4px;
+	color: white;
+	font-size: 1em; 
+	font-weight: bold;
+	background: rgba(51,17,55, 0.8);
+	text-align: center;
+	text-decoration-line: none;
+	padding: 10px;
+	margin-left: 450px; 
+	margin-top: 20px;
+
+}
+
+
+@keyframes example {
+    0%   { left:0px; top:0px; width: 350px; height: 400px;}
+    25%   { left:0px; top:0px; width: 350px; height: 400px;}
+    50%  {background: ; left:400px; top:0px; width: 350px; height: 400px}
+    75%   { left:0px; top:0px; width: 350px; height: 400px;}
+    100% {background:  left:800px; top:0px; width: 350px; height: 400px}
+}
+
+
+/* The element to apply the animation to */
+#score{
+    width: 500px;
+    height: 500px;
+    position: relative;
+  animation-name: example;
+    animation-duration: 3s ;
+   
+
+
+}
+
